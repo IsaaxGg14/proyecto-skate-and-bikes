@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - Skate & Bikes</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
 
 <header class="header">
     <h2>Skate & Bikes</h2>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="editar_perfil.html">Editar Perfil</a>
-        <a href="login.html">Salir</a>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('editar_perfil') }}">Editar Perfil</a>
+        <a href="{{ url_for('login') }}">Salir</a>
     </nav>
 </header>
 
@@ -27,7 +27,7 @@
         </div>
 
         <div class="perfil-actions">
-            <a href="editar_perfil.html" class="btn">Editar Perfil</a>
+            <a href="{{ url_for('editar_perfil') }}" class="btn">Editar Perfil</a>
         </div>
     </div>
 </div>

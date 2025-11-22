@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Perfil - Skate & Bikes</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
 
 <header class="header">
     <h2>Skate & Bikes</h2>
     <nav>
-        <a href="perfil.html">Volver</a>
+        <a href="{{ url_for('perfil') }}">Volver</a>
     </nav>
 </header>
 

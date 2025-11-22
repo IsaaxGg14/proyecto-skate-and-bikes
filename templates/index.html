@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skate & Bikes - Inicio</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
 
 <header class="header">
     <h2>Skate & Bikes</h2>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="login.html">Iniciar Sesión</a>
-        <a href="register.html">Registrarse</a>
+        <a href="{{ url_for('index') }}">Inicio</a>
+        <a href="{{ url_for('login') }}">Iniciar Sesión</a>
+        <a href="{{ url_for('register') }}">Registrarse</a>
     </nav>
 </header>
 
@@ -25,12 +25,13 @@
     <h3>Productos destacados</h3>
 
     <div class="card">
-        <img src="static/imagenes/bici1.jpg" width="100%">
+        <img src="{{ url_for('static', filename='imagenes/bici1.jpg') }}" width="100%">
         <h3>Bicicleta profesional</h3>
         <p>₡150.000</p>
         <button class="btn">Agregar al carrito</button>
     </div>
 </div>
+
 
 <footer class="footer">
     <p>© 2025 Skate & Bikes</p>
